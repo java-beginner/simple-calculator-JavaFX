@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AppController">
+   <center>
+      <Pane prefHeight="320.0" prefWidth="260.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="textFieldFormula" layoutX="29.0" layoutY="12.0" prefHeight="25.0" prefWidth="202.0" promptText="式を入力してください。" />
+            <TextField fx:id="textFieldValue" editable="false" layoutX="29.0" layoutY="52.0" prefHeight="25.0" prefWidth="202.0" promptText="=ボタンを押すと計算結果が出ます。" />
+            <Label layoutX="14.0" layoutY="16.0" text="式" />
+            <Label layoutX="14.0" layoutY="56.0" text="値" />
+            <Button fx:id="buttonOne" layoutX="14.0" layoutY="174.0" mnemonicParsing="false" onAction="#insert" prefHeight="30.0" prefWidth="30.0" text="1" />
+            <Button fx:id="buttonTwo" layoutX="52.0" layoutY="174.0" mnemonicParsing="false" onAction="#insert" prefHeight="30.0" prefWidth="30.0" text="2" />
+            <Button fx:id="buttonThree" layoutX="88.0" layoutY="174.0" mnemonicParsing="false" onAction="#insert" prefHeight="30.0" prefWidth="30.0" text="3" />
+            <Button fx:id="buttonFour" layoutX="14.0" layoutY="132.0" mnemonicParsing="false" onAction="#insert" prefHeight="30.0" prefWidth="30.0" text="4" />
+            <Button fx:id="buttonFive" layoutX="52.0" layoutY="132.0" mnemonicParsing="false" onAction="#insert" prefHeight="30.0" prefWidth="30.0" text="5" />
+            <Button fx:id="buttonSix" layoutX="88.0" layoutY="132.0" mnemonicParsing="false" onAction="#insert" prefHeight="30.0" prefWidth="30.0" text="6" />
+            <Button fx:id="buttonSeven" layoutX="14.0" layoutY="90.0" mnemonicParsing="false" onAction="#insert" prefHeight="30.0" prefWidth="30.0" text="7" />
+            <Button fx:id="buttonEight" layoutX="52.0" layoutY="90.0" mnemonicParsing="false" onAction="#insert" prefHeight="30.0" prefWidth="30.0" text="8" />
+            <Button fx:id="buttonNine" layoutX="88.0" layoutY="90.0" mnemonicParsing="false" onAction="#insert" prefHeight="30.0" prefWidth="30.0" text="9" />
+            <Button fx:id="buttonZero" layoutX="14.0" layoutY="214.0" mnemonicParsing="false" onAction="#insert" prefHeight="30.0" prefWidth="30.0" text="0" />
+            <Button fx:id="buttonPlus" layoutX="128.0" layoutY="90.0" mnemonicParsing="false" onAction="#insert" prefHeight="30.0" prefWidth="30.0" text="+" />
+            <Button fx:id="buttonMinus" layoutX="128.0" layoutY="132.0" mnemonicParsing="false" onAction="#insert" prefHeight="30.0" prefWidth="30.0" text="-" />
+            <Button fx:id="buttonMult" layoutX="163.0" layoutY="90.0" mnemonicParsing="false" onAction="#insert" prefHeight="30.0" prefWidth="30.0" text="*" />
+            <Button fx:id="buttonDiv" layoutX="163.0" layoutY="132.0" mnemonicParsing="false" onAction="#insert" prefHeight="30.0" prefWidth="30.0" text="/" />
+            <Button fx:id="buttonRem" layoutX="163.0" layoutY="174.0" mnemonicParsing="false" onAction="#insert" prefHeight="30.0" prefWidth="30.0" text="\%" />
+            <Button fx:id="buttonBracketOpen" layoutX="200.0" layoutY="90.0" mnemonicParsing="false" onAction="#insert" prefHeight="30.0" prefWidth="30.0" text="(" />
+            <Button fx:id="buttonBracketClose" layoutX="200.0" layoutY="132.0" mnemonicParsing="false" onAction="#insert" prefHeight="30.0" prefWidth="30.0" text=")" />
+            <Button layoutX="128.0" layoutY="214.0" mnemonicParsing="false" onAction="#calc" prefHeight="30.0" prefWidth="30.0" text="=" />
+            <Button layoutX="163.0" layoutY="214.0" mnemonicParsing="false" onAction="#clear" prefHeight="30.0" prefWidth="30.0" text="C" />
+            <Label layoutX="15.0" layoutY="257.0" text="Copyright 2016 Javaを復習する初心者" />
+            <Hyperlink fx:id="hyperlinkWebSite" layoutX="64.0" layoutY="284.0" onAction="#showWebSite" text="http://java-beginner.com/" />
+         </children>
+      </Pane>
+   </center>
+</BorderPane>
