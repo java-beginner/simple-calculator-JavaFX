@@ -19,7 +19,7 @@ public class Main extends Application {
     public void start(Stage primaryStage) {
         BorderPane root;
         try {
-            root = (BorderPane)FXMLLoader.load(getClass().getResource("app.fxml"));
+            root = (BorderPane)FXMLLoader.load(getClass().getResource(Constants.APP_SETTING_FXML));
             Scene scene = new Scene(root);
             primaryStage.setTitle(Constants.APP_SETTING_TITLE);
             primaryStage.setScene(scene);

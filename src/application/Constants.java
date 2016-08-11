@@ -12,6 +12,9 @@ public class Constants {
     private Constants() {}
 
     /* アプリケーションの設定 */
+    /** fxmlファイル */
+    public static final String APP_SETTING_FXML = "app.fxml";
+
     /** タイトル */
     public static final String APP_SETTING_TITLE = "JavaFX簡易電卓";
 
