@@ -45,7 +45,7 @@ public class AppController {
     Evaluation evaluation = new Evaluation();
 
     @FXML
-    public void insert(ActionEvent event) throws Exception {
+    private void insert(ActionEvent event) {
 
         String targetChara = Constants.STR_EMPTY;
         if (event.getSource() == buttonOne) targetChara          = Constants.STR_ONE;
@@ -71,7 +71,7 @@ public class AppController {
     }
 
     @FXML
-    public void calc(ActionEvent event) throws Exception {
+    private void calc(ActionEvent event) {
 
         textFieldValue.setText(Constants.STR_EMPTY);
 
@@ -98,7 +98,7 @@ public class AppController {
     }
 
     @FXML
-    public void clear(ActionEvent event) throws Exception {
+    private void clear(ActionEvent event) {
 
         textFieldFormula.setText(Constants.STR_EMPTY);
         textFieldValue.setText(Constants.STR_EMPTY);
